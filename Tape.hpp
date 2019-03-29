@@ -16,6 +16,7 @@ public:
 	void input(unsigned char c);
 	bool isZero();
 
+	void print();
 private:
 	std::vector<unsigned char> _tape;
 	int _index;

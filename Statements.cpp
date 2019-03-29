@@ -1,5 +1,4 @@
 #include "Statements.hpp"
-
 void die(std::string where, std::string message, Token &token) {
 	std::cout << where << " " << message << std::endl;
 	token.print();

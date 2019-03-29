@@ -6,7 +6,6 @@
 #include "Statements.hpp"
 
 // Parser functions
-
 void Parser::die(std::string where, std::string message, Token &token) {
 	std::cout << where << " " << message << std::endl;
 	token.print();
@@ -32,7 +31,6 @@ Statements *Parser::statements() {
 	while (!tok.eof() && !tok.isRightBracket()) {
 		tokenizer.ungetToken();
 		if (tok.isLeftBracket()) {
-			std::cout << "Parsing a loop" << std::endl;
 			LoopStatement *loopStmt = loopStatement();
 			stmts->addStatement(loopStmt);
 		}

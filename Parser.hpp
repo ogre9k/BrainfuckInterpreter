@@ -16,9 +16,6 @@ public:
 	
 	SimpleStatement *simpleStatement();
 	LoopStatement *loopStatement();
-	
-
-	std::string id();
 
 private:
 	Tokenizer &tokenizer;

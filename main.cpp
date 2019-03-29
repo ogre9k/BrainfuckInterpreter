@@ -34,5 +34,8 @@ int main(int argc, char *argv[]) {
 	Tape tape;
 	//tokenizer.printProcessedTokens();
 	statements->evaluate(tape);
+	std::cout << "\n---MEMORY MAP---\n";
+	tape.print();
+
 	return 0;
 }

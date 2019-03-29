@@ -5,6 +5,13 @@
 
 Tape::Tape() : _tape(std::vector<unsigned char>(1, 0)), _index(0) {}
 
+void Tape::print() {
+	for (int i = 0; i < _tape.size(); i++) {
+		std::cout << "[" << int(_tape[i]) << "]";
+		if (i > 0 && i % 10 == 0)
+			std::cout << std::endl;
+	}
+}
 void Tape::plus() {
 	if (_tape[_index] != 255)
 		_tape[_index]++;
